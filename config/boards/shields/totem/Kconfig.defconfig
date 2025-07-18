@@ -17,3 +17,10 @@ config ZMK_SPLIT
     default y
 
 endif
+
+if ZMK_STUDIO
+
+config ZMK_STUDIO_KEYMAP
+    default y
+
+endif
