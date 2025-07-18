@@ -24,8 +24,7 @@
         >;
         
         // Define coordinates for each key position (in mm)
-        // This should match your actual physical keyboard layout
-        coordinator {
+        coordinates {
             // Left half
             0 { row = 0; col = 0; x = 0; y = 12; }; // Q
             1 { row = 0; col = 1; x = 19; y = 12; }; // W
@@ -35,44 +34,44 @@
             
             5 { row = 1; col = 0; x = 0; y = 31; }; // A
             6 { row = 1; col = 1; x = 19; y = 31; }; // S
-            7 { row = 1; col = 2; x = 38; y = 25; }; // D
-            8 { row = 1; col = 3; x = 57; y = 27; }; // F
-            9 { row = 1; col = 4; x = 76; y = 31; }; // G
+            7 { row = 1, col = 2; x = 38; y = 25; }; // D
+            8 { row = 1, col = 3; x = 57; y = 27; }; // F
+            9 { row = 1, col = 4; x = 76; y = 31; }; // G
             
-            10 { row = 3; col = 0; x = -19; y = 50; }; // Left outer thumb
-            11 { row = 2; col = 0; x = 0; y = 50; }; // Z
-            12 { row = 2; col = 1; x = 19; y = 50; }; // X
-            13 { row = 2; col = 2; x = 38; y = 44; }; // C
-            14 { row = 2; col = 3; x = 57; y = 46; }; // V
-            15 { row = 2; col = 4; x = 76; y = 50; }; // B
+            10 { row = 3, col = 0; x = -19; y = 50; }; // Left outer thumb
+            11 { row = 2, col = 0; x = 0; y = 50; }; // Z
+            12 { row = 2, col = 1; x = 19; y = 50; }; // X
+            13 { row = 2, col = 2; x = 38; y = 44; }; // C
+            14 { row = 2, col = 3; x = 57; y = 46; }; // V
+            15 { row = 2, col = 4; x = 76; y = 50; }; // B
             
-            16 { row = 3; col = 2; x = 38; y = 63; }; // Left inner thumb
-            17 { row = 3; col = 3; x = 57; y = 65; }; // Left middle thumb
-            18 { row = 3; col = 4; x = 76; y = 69; }; // Left outer thumb
+            16 { row = 3, col = 2; x = 38; y = 63; }; // Left inner thumb
+            17 { row = 3, col = 3; x = 57; y = 65; }; // Left middle thumb
+            18 { row = 3, col = 4; x = 76; y = 69; }; // Left outer thumb
             
             // Right half
-            19 { row = 0; col = 5; x = 124; y = 12; }; // Y
-            20 { row = 0; col = 6; x = 143; y = 8; }; // U
-            21 { row = 0; col = 7; x = 162; y = 6; }; // I
-            22 { row = 0; col = 8; x = 181; y = 12; }; // O
-            23 { row = 0; col = 9; x = 200; y = 12; }; // P
+            19 { row = 0, col = 5; x = 124; y = 12; }; // Y
+            20 { row = 0, col = 6; x = 143; y = 8; }; // U
+            21 { row = 0, col = 7; x = 162; y = 6; }; // I
+            22 { row = 0, col = 8; x = 181; y = 12; }; // O
+            23 { row = 0, col = 9; x = 200; y = 12; }; // P
             
-            24 { row = 1; col = 5; x = 124; y = 31; }; // H
-            25 { row = 1; col = 6; x = 143; y = 27; }; // J
-            26 { row = 1; col = 7; x = 162; y = 25; }; // K
-            27 { row = 1; col = 8; x = 181; y = 31; }; // L
-            28 { row = 1; col = 9; x = 200; y = 31; }; // ;
+            24 { row = 1, col = 5; x = 124; y = 31; }; // H
+            25 { row = 1, col = 6; x = 143; y = 27; }; // J
+            26 { row = 1, col = 7; x = 162; y = 25; }; // K
+            27 { row = 1, col = 8; x = 181; y = 31; }; // L
+            28 { row = 1, col = 9; x = 200; y = 31; }; // ;
             
-            29 { row = 2; col = 5; x = 124; y = 50; }; // N
-            30 { row = 2; col = 6; x = 143; y = 46; }; // M
-            31 { row = 2; col = 7; x = 162; y = 44; }; // ,
-            32 { row = 2; col = 8; x = 181; y = 50; }; // .
-            33 { row = 2; col = 9; x = 200; y = 50; }; // /
-            34 { row = 3; col = 9; x = 219; y = 50; }; // Right outer key
+            29 { row = 2, col = 5; x = 124; y = 50; }; // N
+            30 { row = 2, col = 6; x = 143; y = 46; }; // M
+            31 { row = 2, col = 7; x = 162; y = 44; }; // ,
+            32 { row = 2, col = 8; x = 181; y = 50; }; // .
+            33 { row = 2, col = 9; x = 200; y = 50; }; // /
+            34 { row = 3, col = 9; x = 219; y = 50; }; // Right outer key
             
-            35 { row = 3; col = 5; x = 124; y = 69; }; // Right inner thumb
-            36 { row = 3; col = 6; x = 143; y = 65; }; // Right middle thumb
-            37 { row = 3; col = 7; x = 162; y = 63; }; // Right outer thumb
+            35 { row = 3, col = 5; x = 124; y = 69; }; // Right inner thumb
+            36 { row = 3, col = 6; x = 143; y = 65; }; // Right middle thumb
+            37 { row = 3, col = 7; x = 162; y = 63; }; // Right outer thumb
         };
     };
 };
