@@ -139,6 +139,29 @@
         };
     };
 
+    macros {
+        mission_control: mission_control {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(UP)>;
+            label = "MISSION_CONTROL";
+        };
+
+        switch_desk_left: switch_desk_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT)>;
+            label = "SWITCH_DESK_LEFT";
+        };
+
+        switch_desk_right: switch_desk_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT)>;
+            label = "SWITCH_DESK_RIGHT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -194,10 +217,10 @@
 
         mouse {
             bindings = <
-        &trans  &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp K_NEXT          &kp C_AC_BACK   &mkp LCLK       &mkp RCLK     &kp C_AC_FORWARD  &trans
-        &trans  &trans  &kp K_MUTE         &kp C_BRI_AUTO        &kp K_PLAY_PAUSE    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &trans
-&trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp K_PREV          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT   &trans  &trans
-                        &trans             &trans                &trans              &trans          &trans          &trans
+        &trans  &kp C_AL_FILE_BROWSER  &kp C_VOLUME_UP    &kp C_NEXT  &trans    &kp C_AC_BACK   &mkp LCLK       &mkp RCLK     &kp C_AC_FORWARD  &switch_desk_right
+        &trans  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &kp C_PP    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &mission_control
+&trans  &trans  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREV  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT   &switch_desk_left   &trans
+                                       &trans             &trans      &trans    &trans          &trans          &trans
             >;
         };
     };
