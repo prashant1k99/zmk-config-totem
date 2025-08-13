@@ -117,22 +117,25 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <26 27>;
         };
-    };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+        bluetooth_clear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <20 31>;
+        };
+
+        bt_next {
+            bindings = <&bt BT_NXT>;
+            key-positions = <35 36 37>;
+        };
+
+        bt_prev {
+            bindings = <&bt BT_PRV>;
+            key-positions = <32 33 34>;
+        };
+
+        ai {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <6 7 8>;
         };
     };
 
@@ -191,10 +194,10 @@
 
         mouse {
             bindings = <
-        &trans  &bt BT_NXT  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp K_NEXT          &trans          &mkp LCLK       &mkp RCLK     &trans           &trans
-        &trans  &trans      &kp K_MUTE         &kp C_BRI_AUTO        &kp K_PLAY_PAUSE    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &bt BT_PRV  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp K_PREV          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-                            &trans             &trans                &trans              &trans          &trans          &trans
+        &trans  &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp K_NEXT          &kp C_AC_BACK   &mkp LCLK       &mkp RCLK     &kp C_AC_FORWARD  &trans
+        &trans  &trans  &kp K_MUTE         &kp C_BRI_AUTO        &kp K_PLAY_PAUSE    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &trans
+&trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp K_PREV          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT   &trans  &trans
+                        &trans             &trans                &trans              &trans          &trans          &trans
             >;
         };
     };
