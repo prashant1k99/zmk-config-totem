@@ -74,17 +74,17 @@
         };
 
         l2 {
-            bindings = <&sl 2>;
+            bindings = <&to 2>;
             key-positions = <3 1 2>;
         };
 
         l1 {
-            bindings = <&sl 1>;
+            bindings = <&to 1>;
             key-positions = <11 12 13>;
         };
 
         l0 {
-            bindings = <&sl 0>;
+            bindings = <&to 0>;
             key-positions = <22 23 24>;
         };
 
@@ -217,7 +217,7 @@
 
         mouse {
             bindings = <
-        &trans  &kp C_AL_FILE_BROWSER  &kp C_VOLUME_UP    &kp C_NEXT  &trans    &kp C_AC_BACK   &mkp LCLK       &mkp RCLK     &kp C_AC_FORWARD  &switch_desk_right
+        &trans  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT  &trans    &kp C_AC_BACK   &mkp LCLK       &mkp RCLK     &kp C_AC_FORWARD  &switch_desk_right
         &trans  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &kp C_PP    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &mission_control
 &trans  &trans  &kp C_BRIGHTNESS_DEC   &kp C_VOLUME_DOWN  &kp C_PREV  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT   &switch_desk_left   &trans
                                        &trans             &trans      &trans    &trans          &trans          &trans
