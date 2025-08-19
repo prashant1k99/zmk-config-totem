@@ -29,6 +29,18 @@
     tapping-term-ms = <170>;
 };
 
+&mmv {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <300>;
+    delay-ms = <0>;
+};
+
+&msc {
+    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <300>;
+    delay-ms = <0>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -216,6 +228,7 @@
         };
 
         mouse {
+            label = "MOUSE";
             bindings = <
         &trans  &kp C_BRIGHTNESS_INC   &kp C_VOLUME_UP    &kp C_NEXT  &trans    &kp C_AC_BACK   &mkp LCLK       &mkp RCLK     &kp C_AC_FORWARD  &switch_desk_right
         &trans  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE         &kp C_PP    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   &mission_control
